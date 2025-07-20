@@ -23,10 +23,11 @@ O sistema executa as verificações e informa o resultado da classificação.
 
 1. Clone o repositório:
 
-```bash
+```
 git clone https://github.com/enzosoaresdev/password-validator.git
 ````
 2. Execute no Terminal:
 
-```bash
+```
 python password_validator.py
+```
