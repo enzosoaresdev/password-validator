@@ -35,8 +35,14 @@ def classify_password(password):
         has_lowercase(password) and
         has_digit(password)
     ):
-        return "Senha Forte!"
-    return "Senha Fraca!"
+        return "Senha forte!"
+    return "Senha fraca, tente novamente!"
 
-password = input("Digite sua senha: ")
-print(classify_password(password))
+password_corret = False
+
+while not password_corret:
+    password = input("Digite sua senha: ")
+    result = classify_password(password)
+    print(result)
+    if result == "Senha forte!":
+        password_corret = True
